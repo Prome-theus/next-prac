@@ -18,11 +18,16 @@ export default function Home() {
       <main
         className={`flex min-h-screen flex-col items-center justify-between p-2 ${inter.className}`}
       >
-        <nav class="p-4 py-">
+        <nav class="mx-4 my-6">
           <div class="container mx-auto">
             <div class="flex items-center justify-between">
               <div class="text-white font-semibold text-lg px-4">
-
+                <Image
+                  src="/logo.png"
+                  width={60}
+                  height={60}
+                  alt="Picture of the author"
+                />
               </div>
               <ul class="flex space-x-5">
                 <li>
@@ -49,6 +54,95 @@ export default function Home() {
             </div>
           </div>
         </nav>
+        
+
+        <div class="bg-white rounded-lg shadow-md p-4 flex">
+            <div class="w-1/2 pr-4">
+                <h2 class="text-xl font-semibold mb-4">Left Partition</h2>
+                <p>This is the content of the left partition.</p>
+            </div>
+
+   
+            <div class="border-r-2 border-gray-300 mx-4"></div>
+
+   
+            <div class="w-1/2 pl-4">
+                <h2 class="text-xl font-semibold mb-4">Right Partition</h2>
+                <p>This is the content of the right partition.</p>
+            </div>
+        </div>
+        
+
+
+
+
+        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+
+        <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <Image src="/joker_pixel.jpegd" width={100} height={100} alt="card image" class="rounded-t-lg" />
+        <div class="px-6 py-10">
+        <div class="font-bold text-xl mb-2">
+          my blog 
+        </div>
+        <p class="text-white-700 text-base">
+            This is a sample card with some content. You can replace this text with your own.
+        </p>
+        </div> 
+        <div class="px-1 pt-1 pb-1">
+        <span class="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2">#Tag1</span>
+        <span class="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700">#Tag2</span>
+        </div>
+        </div>
+        </div>
+
+        <div class="container mx-auto bg-white-300">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <Image src="/joker_pixel.jpeg" width={100} height={100} alt="card image" />
+        <div class="px-6 py-10">
+        <div class="font-bold text-xl mb-2">
+          my blog 
+        </div>
+        <p class="text-white-700 text-base">
+            This is a sample card with some content. You can replace this text with your own.
+        </p>
+        </div> 
+        <div class="px-1 pt-1 pb-1">
+        <span class="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2">#Tag1</span>
+        <span class="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700">#Tag2</span>
+        </div>
+        </div>
+        </div>
+
+        <div class="container mx-auto bg-white-300">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <Image src="/joker_pixel.jpeg" width={100} height={100} alt="card image" />
+        <div class="px-6 py-10">
+        <div class="font-bold text-xl mb-2">
+          my blog 
+        </div>
+        <p class="text-white-700 text-base">
+            This is a sample card with some content. You can replace this text with your own.
+        </p>
+        </div> 
+        <div class="px-1 pt-1 pb-1">
+        <span class="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2">#Tag1</span>
+        <span class="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700">#Tag2</span>
+        </div>
+        </div>
+        </div>
+        
+        </div>
+
+        <div class="container">
+        <footer class="bg-gray-200 p-4">
+        <div class="container mx-auto">
+        <p class="text-center text-gray-600">&copy; 2023 Your Blog</p>
+        </div>
+        </footer>
+        </div>
+
+
       </main>
     </div>
   );
