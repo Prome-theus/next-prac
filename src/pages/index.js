@@ -18,10 +18,10 @@ export default function Home() {
       <main
         className={`flex min-h-screen flex-col items-center justify-between p-2 ${inter.className}`}
       >
-        <nav class="mx-4 my-6">
+        <nav class="mx-4 my-6"> 
           <div class="container mx-auto">
             <div class="flex items-center justify-between">
-              <div class="text-white font-semibold text-lg px-4">
+              <div class="text-white font-semibold text-lg px-4 mx-6">
                 <Image
                   src="/logo.png"
                   width={60}
@@ -58,17 +58,21 @@ export default function Home() {
 
         <div class="bg-white rounded-lg shadow-md p-4 flex">
             <div class="w-1/2 pr-4">
-                <h2 class="text-xl font-semibold mb-4">Left Partition</h2>
-                <p>This is the content of the left partition.</p>
+                <p class="text-black my-4">HI THERE 👋 I'M</p>
+                <h1 class="text-xl font-semibold py-1 text-black"> TANISH </h1>
+                <h1 class="text-xl font-semibold mb-1 text-black"> SURNAME </h1>
+                <p class="text-black mb-2">IT ENGINEER</p>
+                <p class="text-black">content</p>
             </div>
-
-   
-            <div class="border-r-2 border-gray-300 mx-4"></div>
-
-   
-            <div class="w-1/2 pl-4">
-                <h2 class="text-xl font-semibold mb-4">Right Partition</h2>
-                <p>This is the content of the right partition.</p>
+            {/* right partition */}
+            <div class="w-1/2 pl-4"> 
+                <Image
+                  src="/memojime.png"
+                  width={300}
+                  height={300}
+                  alt="Picture of the author"
+                />
+                <p class="text-black"></p>
             </div>
         </div>
         
@@ -78,9 +82,10 @@ export default function Home() {
 
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 
-        <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        {/* <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"> */}
+        <div class="container mx-auto bg-white-900">
         <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <Image src="/joker_pixel.jpegd" width={100} height={100} alt="card image" class="rounded-t-lg" />
+                <Image src="/joker_pixel.jpeg" width={100} height={100} alt="card image" class="rounded-t-lg" />
         <div class="px-6 py-10">
         <div class="font-bold text-xl mb-2">
           my blog 
